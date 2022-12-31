@@ -29,7 +29,7 @@ export const User = () => {
 
   if (loading) {
     return (
-      <div>
+      <div className="Loading">
         <h1>Loading...</h1>
       </div>
     );
@@ -47,9 +47,9 @@ export const User = () => {
     <div className="users">
       {users.map(({ id, name, phone, username }) => (
         <div key={id} className="userDiv">
-          <h1>{name}</h1>
-          <h1>{phone}</h1>
-          <h1>{username}</h1>
+          <h2>Username : {username}</h2>
+          <h2>Name : {name}</h2>
+          <h2>Phone : {phone}</h2>
           <button onClick={() => navigate(`/${id}`)}>More Details</button>
         </div>
       ))}

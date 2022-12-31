@@ -3,3 +3,51 @@
   padding: 0;
   box-sizing: border-box;
 }
+.Loading {
+  text-align: center;
+  margin: 40vh 0;
+}
+/* -----------All Users------------ */
+.users {
+  width: 80%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.userDiv {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  height: 200px;
+  position: relative;
+}
+button {
+  position: absolute;
+  border: none;
+  font-size: 17px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.2s ease-in-out;
+  bottom: 20px;
+}
+button:hover {
+  background-color: #252525;
+}
+
+/* -------------Single User--------------- */
+
+.user {
+  margin: 30vh auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: relative;
+  width: fit-content;
+}
+.user * {
+  margin: 5px 0;
+}
